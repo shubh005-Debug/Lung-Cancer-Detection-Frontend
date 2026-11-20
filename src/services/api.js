@@ -1,7 +1,7 @@
 // In production Flask serves both frontend and backend on same URL
 // In development React runs on 3000, Flask on 5000
 const BASE_URL = process.env.NODE_ENV === 'production'
-  ? ''
+  ? 'https://lung-cancer-detection-8juq.onrender.com'
   : (process.env.REACT_APP_API_URL || 'http://localhost:5000');
 
 export const api = {
